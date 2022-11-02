@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Mi CSS -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <!-- Chart.js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <title>Desafío Conversor de Monedas - APIs</title>
+    </head>
+    <body>
+        <hr />
+        <h1>Conversor de Monedas Nacional</h1>
+        <hr />
+        <main>
+            <section>
+                <div>
+                    <h3>Pesos CLP</h3>
+                    <input
+                        type="text"
+                        name="valor-pesos-chilenos"
+                        id="valor-pesos-chilenos"
+                    />
+                </div>
+                <div>
+                    <h3>Moneda a convertir</h3>
+                    <select name="moneda-a-convertir" id="moneda-a-convertir">
+                        <option value="dolar">Dólar</option>
+                        <option value="euro">Euro</option>
+                    </select>
+                </div>
+                <div>
+                    <input
+                        type="button"
+                        name="buscar"
+                        id="buscar"
+                        value="Convertir"
+                    />
+                </div>
+            </section>
+            <p id="resultado"></p>
+        </main>
+
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <!-- Script principal -->
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
